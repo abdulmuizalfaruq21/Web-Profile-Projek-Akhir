@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Profile - Abdul Muiz Al-Faruq</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="stylesheet.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">1Milion<span>.Creatif</span></div>
+            <ul class="nav-link">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Tentang</a></li>
+                <li><a href="#portfolio">Portofolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="selection1">
+        <div class="content1">
+            <h5>Welcome to my space</h5>
+            <h1>Hallo, Saya <span class="highlight">Abdul Muiz Al-Faruq</span></h1>
+            <p>Seorang Web Developer, Desainer, & Owner 1Milion Creative</p>
+            <div class="btn-group">
+                <a href="#portfolio" class="btn">Lihat Karya</a>
+                <a href="#contact" class="btn btn-secondary">Hubungi Saya</a>
+            </div>
+        </div>
+    </section>
+
+<section id="about" class="selection2">
+    <div class="about-container">
+        
+        <div class="about-text">
+            <h2>Tentang Saya</h2>
+            <div class="underline"></div>
+            <p>Saya Abdul Muiz Al-Faruq, seorang santri, mahasiswa, dan pegiat kreatif yang suka belajar hal-hal baru. Saat ini saya menjalankan <strong>1Milion Creative</strong>, sebuah usaha yang bergerak di bidang desain dan produk kreatif.</p>
+            <p>Saya percaya bahwa konsistensi lebih penting daripada kesempurnaan. Karena itu, saya terus mengembangkan kemampuan di bidang desain, teknologi, dan berbagai keterampilan lainnya. Di sela aktivitas sehari-hari, saya juga menikmati bermain game, memodifikasi motor, dan mengeksplorasi ide-ide kreatif yang bisa diwujudkan menjadi karya nyata.</p>
+            <p>Tujuan saya sederhana: terus berkembang, bermanfaat bagi orang lain, dan mempersiapkan masa depan yang lebih baik untuk diri saya dan keluarga.</p>
+            
+            <div class="about-stats">
+                <div class="stat-card">
+                    <h3>1M+</h3>
+                    <p>Ide Kreatif</p>
+                </div>
+                <div class="stat-card">
+                    <h3>HTML5</h3>
+                    <p>CSS3 & Grid</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="about-image">
+            <img src="foto saya.png" alt="Foto Abdul Muiz Al-Faruq">
+        </div>
+
+    </div>
+</section>
+    <section id="portfolio" class="selection3">
+        <h2>Portofolio Terbaru</h2>
+        <div class="underline"></div>
+        <div class="portfolio-grid">
+            <div class="portfolio-card">
+                <div class="card-badge">Design</div>
+                <div class="card-image-box">      
+                    <img src="desain.png" alt="Desain Tabligh Akbar" class="portfolio-img">
+                </div>
+                <div class="card-content">
+                    <h3>Media Publikasi Tabligh Akbar</h3>
+                    <p>Projek perancangan poster digital untuk acara "Tabligh Akbar: Safari Dakwah Al-Quran". Desain ini menonjolkan nuansa islami yang modern dengan perpaduan warna hijau korporat dan aksen emas.</p>
+                </div>
+            </div>
+            <div class="portfolio-card">
+                <div class="card-badge">Web Dev</div>
+                <div>
+                  <img src="web.png" alt="website" class="portfolio-img">  
+                </div>
+
+                <div class="card-content">
+                  <h3>Landing Page & Web Event Responsif (Projek UAS)</h3>
+        
+                    <p>Projek pengembangan halaman arahan (landing page) interaktif untuk manajemen event yang dibangun sebagai pemenuhan tugas akhir (UAS). Website ini dirancang responsif menggunakan HTML5 dan CSS3 untuk memberikan pengalaman pengguna yang optimal di berbagai perangkat.</p>                    
+                    <a href="https://abdulmuizalfaruq21.github.io/UAS/" target="_blank" class="btn-link">Kunjungi website</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="selection4">
+        <h2>Mari Berkolaborasi</h2>
+        <div class="underline"></div>
+        <p>Punya ide projek menarik atau ingin berdiskusi? Yuk, kopi darat digital!</p>
+        <form class="contact-form" onsubmit="event.preventDefault();">
+            <input type="text" placeholder="Nama Kamu" required>
+            <input type="email" placeholder="Email Kamu" required>
+            <textarea placeholder="Pesan atau ajakan projek..." rows="5" required></textarea>
+            <button type="submit" class="btn">Kirim Pesan</button>
+        </form>
+    </section>
+
+    <script src="script.js"></script>
+</body>
+</html>
