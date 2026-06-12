@@ -434,4 +434,265 @@ h2 {
     .btn-secondary {
         margin-left: 0;
     }
+    
+}
+/* --- CONTACT ME SECTION --- */
+.contact-section {
+    padding: 80px 20px;
+    background-color: #fffaf1; /* Latar cream hangat */
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.contact-section .section-title {
+    font-family: var(--font-heading);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--espresso);
+    margin-bottom: 10px;
+}
+
+.contact-section .section-title span {
+    color: var(--caramel);
+}
+
+.contact-section .section-subtitle {
+    text-align: center;
+    color: var(--mocca);
+    margin-bottom: 50px;
+    font-size: 1rem;
+}
+
+/* Tata Letak Dua Kolom */
+.contact-wrapper {
+    display: grid;
+    grid-template-columns: 1.2fr 1fr;
+    gap: 40px;
+}
+
+.contact-form-box, .contact-info-box {
+    background: #ffffff;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(76, 43, 8, 0.05);
+    border: 1px solid rgba(215, 189, 166, 0.2);
+}
+
+.contact-form-box h3, .contact-info-box h3 {
+    font-family: var(--font-heading);
+    font-size: 1.5rem;
+    color: var(--espresso);
+    margin-bottom: 20px;
+}
+
+.info-desc {
+    color: #666;
+    font-size: 0.95rem;
+    margin-bottom: 30px;
+}
+
+/* Gaya Input Form */
+.input-group {
+    margin-bottom: 20px;
+}
+
+.input-group input, .input-group textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid rgba(171, 119, 67, 0.3);
+    border-radius: 10px;
+    background-color: #fffcf7;
+    font-family: inherit;
+    font-size: 0.95rem;
+    color: var(--espresso);
+    outline: none;
+    transition: border-color 0.3s ease;
+}
+
+.input-group input:focus, .input-group textarea:focus {
+    border-color: var(--caramel);
+}
+
+/* Tombol Submit */
+.btn-submit {
+    background-color: var(--caramel);
+    color: #ffffff;
+    border: none;
+    padding: 15px 30px;
+    font-size: 1rem;
+    font-weight: 600;
+    border-radius: 10px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: var(--espresso);
+    transform: translateY(-2px);
+}
+
+/* Gaya Kartu Kontak (Sisi Kanan) */
+.contact-details {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-card {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    padding: 15px 20px;
+    background-color: #fffcf7;
+    border: 1px solid rgba(215, 189, 166, 0.2);
+    border-radius: 12px;
+    text-decoration: none;
+    color: var(--espresso);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-icon {
+    font-size: 1.8rem;
+    color: var(--caramel);
+    width: 50px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(171, 119, 67, 0.08);
+    border-radius: 10px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.card-text h4 {
+    font-size: 1rem;
+    margin-bottom: 2px;
+}
+
+.card-text p {
+    font-size: 0.85rem;
+    color: #666;
+}
+
+/* Efek Hover Spesifik Per Media Sosial */
+.contact-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.contact-card.wa:hover { border-color: #25d366; }
+.contact-card.wa:hover .card-icon { background-color: #25d366; color: #fff; }
+
+.contact-card.email:hover { border-color: var(--caramel); }
+.contact-card.email:hover .card-icon { background-color: var(--caramel); color: #fff; }
+
+.contact-card.instagram:hover { border-color: #e1306c; }
+.contact-card.instagram:hover .card-icon { background-color: #e1306c; color: #fff; }
+
+.contact-card.github:hover { border-color: #000000; }
+.contact-card.github:hover .card-icon { background-color: #000000; color: #fff; }
+
+/* RESPONSIVE DESIGN (BIAR PAS DI LAYAR HP) */
+@media (max-width: 768px) {
+    .contact-wrapper {
+        grid-template-columns: 1fr; /* Menjadi satu kolom bertumpuk di HP */
+    }
+    
+    .contact-form-box, .contact-info-box {
+        padding: 25px;
+    }
+}
+/* --- MINIMALIST FOOTER STYLES --- */
+footer {
+    background-color: var(--espresso); /* Warna espresso gelap */
+    color: var(--text-light);
+    padding: 50px 20px 20px;
+    margin-top: 60px;
+    border-top: 4px solid var(--caramel); /* Garis pembatas caramel */
+}
+
+.footer-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between; /* Membuat brand di kiri, links di kanan */
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 30px;
+    padding-bottom: 30px;
+}
+
+/* Gaya Bagian Brand */
+.footer-brand h2 {
+    font-family: var(--font-heading);
+    font-size: 1.6rem;
+    color: #ffffff;
+    margin-bottom: 5px;
+    text-align: left;
+}
+
+.footer-brand h2 span {
+    color: var(--vanilla);
+}
+
+.footer-brand p {
+    font-size: 0.9rem;
+    color: #c4b3a5;
+    opacity: 0.8;
+}
+
+/* Gaya Link Navigasi Cepat */
+.footer-links ul {
+    display: flex;
+    list-style: none;
+    gap: 25px; /* Jarak antar menu */
+}
+
+.footer-links ul li a {
+    color: #c4b3a5;
+    text-decoration: none;
+    font-size: 0.95rem;
+    font-weight: 500;
+    transition: color 0.3s ease;
+}
+
+.footer-links ul li a:hover {
+    color: var(--vanilla); /* Berubah warna krem saat kursor mendekat */
+}
+
+/* Bagian Hak Cipta */
+.footer-bottom {
+    max-width: 1200px;
+    margin: 0 auto;
+    border-top: 1px solid rgba(215, 189, 166, 0.1);
+    padding-top: 20px;
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: 0.85rem;
+    color: #9c8b7c;
+}
+
+/* RESPONSIVE DESIGN (Biar Rapi di HP) */
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column; /* Berubah jadi menumpuk vertikal di HP */
+        text-align: center;
+    }
+
+    .footer-brand h2 {
+        text-align: center;
+    }
+
+    .footer-links ul {
+        justify-content: center;
+        padding: 0;
+    }
 }

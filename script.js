@@ -56,7 +56,7 @@ document.addEventListener('DOMContentLoaded', () => {
             submitBtn.disabled = true;
 
             setTimeout(() => {
-                alert('Terima kasih Abdul! Pesan simulasi berhasil dikirim.');
+                alert('Terima kasih! Pesan berhasil dikirim.');
                 form.reset();
                 submitBtn.innerText = originalText;
                 submitBtn.style.opacity = '1';

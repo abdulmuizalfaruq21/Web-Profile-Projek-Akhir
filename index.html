@@ -7,6 +7,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     <link rel="stylesheet" href="stylesheet.css">
 </head>
 <body>
@@ -97,18 +98,92 @@
         </div>
     </section>
 
-    <section id="contact" class="selection4">
-        <h2>Mari Berkolaborasi</h2>
-        <div class="underline"></div>
-        <p>Punya ide projek menarik atau ingin berdiskusi? Yuk, kopi darat digital!</p>
-        <form class="contact-form" onsubmit="event.preventDefault();">
-            <input type="text" placeholder="Nama Kamu" required>
-            <input type="email" placeholder="Email Kamu" required>
-            <textarea placeholder="Pesan atau ajakan projek..." rows="5" required></textarea>
-            <button type="submit" class="btn">Kirim Pesan</button>
-        </form>
-    </section>
+<section id="contact" class="contact-section">
+        <div class="contact-container">
+            <h2 class="section-title">Contact <span>Me</span></h2>
+            <p class="section-subtitle">Punya proyek kreatif atau ingin berkolaborasi? Yuk, hubungi saya!</p>
 
+            <div class="contact-wrapper">
+                <div class="contact-form-box">
+                    <h3>Kirim Pesan</h3>
+                    <form class="contact-form">
+                        <div class="input-group">
+                            <input type="text" placeholder="Nama Lengkap" required>
+                        </div>
+                        <div class="input-group">
+                            <input type="email" placeholder="Alamat Email" required>
+                        </div>
+                        <div class="input-group">
+                            <textarea placeholder="Isi Pesan Anda..." rows="5" required></textarea>
+                        </div>
+                        <button type="submit" class="btn-submit">Kirim Sekarang <i class="fas fa-paper-plane"></i></button>
+                    </form>
+                </div>
+
+                <div class="contact-info-box">
+                    <h3>Info Kontak</h3>
+                    <p class="info-desc">Silakan hubungi saya secara langsung melalui platform di bawah ini:</p>
+
+                    <div class="contact-details">
+                        <a href="https://wa.me/6283195631728" target="_blank" class="contact-card wa">
+                            <div class="card-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="card-text">
+                                <h4>WhatsApp</h4>
+                                <p>0831-9563-1728</p>
+                            </div>
+                        </a>
+
+                        <a href="mailto:abdulmuizalfaruq21@gmail.com" class="contact-card email">
+                            <div class="card-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="card-text">
+                                <h4>Email</h4>
+                                <p>abdulmuizalfaruq21@gmail.com</p>
+                            </div>
+                        </a>
+
+                        <a href="https://www.instagram.com/dapur_media21?igsh=MWEzamRleTN0eGZlZw%3D%3D&utm_source=qr" target="_blank" class="contact-card instagram">
+                            <div class="card-icon"><i class="fab fa-instagram"></i></div>
+                            <div class="card-text">
+                                <h4>Instagram</h4>
+                                <p>@dapur_media21</p>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/abdulmuizalfaruq21/Abdulmuizalfaruq21-" target="_blank" class="contact-card github">
+                            <div class="card-icon"><i class="fab fa-github"></i></div>
+                            <div class="card-text">
+                                <h4>GitHub</h4>
+                                <p>abdulmuizalfaruq21</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            
+            <div class="footer-brand">
+                <h2>1Milion<span>Creative</span></h2>
+                <p>Konsistensi lebih penting daripada kesempurnaan.</p>
+            </div>
+
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#about">Tentang</a></li>
+                    <li><a href="#portfolio">Portofolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2026 Abdul Muiz Al-Faruq. All rights reserved.</p>
+        </div>
+    </footer>
     <script src="script.js"></script>
 </body>
 </html>
