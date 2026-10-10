@@ -301,7 +301,7 @@ h2 {
 /* KODE BARU: Wadah Foto di Dalam Kartu */
 .card-image-box {
     width: 100%;
-    height: 200px; /* Mengatur tinggi area foto preview */
+    height: 300px; /* Mengatur tinggi area foto preview */
     overflow: hidden;
     background-color: var(--vanilla);
 }
